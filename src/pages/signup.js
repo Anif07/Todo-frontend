@@ -11,11 +11,14 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8080/register", {
-        email,
-        password,
-      });
-      alert("please check your email for confirmation");
+      const response = await axios.post(
+        "https://todo-backend-mrhc.onrender.com/register",
+        {
+          email,
+          password,
+        }
+      );
+      alert("successfully registered please check your email for confirmation");
       console.log("User registered:", response.data);
       navigate("/login");
     } catch (error) {

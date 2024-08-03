@@ -10,7 +10,7 @@ const Home = ({ token }) => {
   const [title, setTitle] = useState("");
   const [isUpdating, setIsUpdating] = useState(false);
   const [updatingId, setUpdatingId] = useState("");
-  const api = "http://localhost:8080/todos";
+  const api = "https://todo-backend-mrhc.onrender.com/todos";
 
   const fetchTodos = async () => {
     const response = await axios.get(api, {

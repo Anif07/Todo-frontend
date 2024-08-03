@@ -12,10 +12,13 @@ const Login = ({ setToken }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8080/login", {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://todo-backend-mrhc.onrender.com/login",
+        {
+          email,
+          password,
+        }
+      );
       setToken(response.data.token);
       console.log(response.data.token);
       alert("successfully login");
