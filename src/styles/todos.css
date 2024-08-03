@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+}
+.toto-input {
+  margin: 5px 0;
+  width: 60%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.605);
+  outline: 0;
+}
+.btn {
+  width: 60px;
+  padding: 10px 0;
+  cursor: pointer;
+  margin-left: 1px;
+  font-size: 1rem;
+  border: 0;
+  outline: 0;
+}
+.add-btn {
+  background-color: black;
+  color: white;
+}
+.cancel-btn {
+  background-color: chocolate;
+  color: white;
+}
+.update-btn {
+  background-color: rgb(6, 109, 80);
+  color: white;
+}
+.todos-cont {
+  background-color: rgb(65, 61, 61);
+  padding: 10px;
+}
+.task {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid; */
+  height: 35px;
+  position: relative;
+  margin: 8px 0;
+}
+
+.todo-cont {
+  width: 400px;
+}
+.check,
+.delete,
+.update {
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.check {
+  position: absolute;
+  left: 5px;
+}
+
+.delete {
+  position: absolute;
+  right: 5px;
+  color: red;
+}
+.update {
+  position: absolute;
+  right: 32px;
+}
+
+.incomplete-todo {
+  font-size: 1rem;
+}
+.completed-todo {
+  text-decoration: line-through;
+}
