@@ -19,7 +19,7 @@ const Login = ({ setToken }) => {
       setToken(response.data.token);
       console.log(response.data.token);
       alert("successfully login");
-      navigate("/");
+      navigate("/todos");
     } catch (error) {
       setNotvalid(true);
       console.error("Error logging in:", error);
@@ -58,7 +58,7 @@ const Login = ({ setToken }) => {
           Login
         </button>
         <p>
-          Don't have an Account? <Link to="/register">Signup</Link>
+          Don't have an Account? <Link to="/">Signup</Link>
         </p>
       </form>
     </div>

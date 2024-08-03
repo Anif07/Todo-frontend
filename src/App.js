@@ -11,12 +11,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/register" element={<Signup />} />
+        <Route path="/" element={<Signup />} />
         <Route path="/login" element={<Login setToken={setToken} />} />
         <Route
-          path="/"
+          path="/todos"
           element={token ? <Home token={token} /> : <Pleaselogin />}
         />
+
         {/* <Route path="/" element={<Home token={token} />} /> */}
       </Routes>
     </BrowserRouter>
