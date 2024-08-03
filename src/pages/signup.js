@@ -22,7 +22,7 @@ const Signup = () => {
       console.log("User registered:", response.data);
       navigate("/login");
     } catch (error) {
-      alert("Email rate limit exceeded");
+      alert(error.response.data);
       console.error("Error registering user:", error);
     }
   };
